@@ -1,0 +1,206 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  height: auto; }
+
+body a {
+  text-decoration: none; }
+
+body a:hover {
+  text-decoration: none;
+  transition: 0.4s all; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.modal {
+  margin-top: 100px; }
+
+.main-nav {
+  height: auto;
+  border-bottom: 1px solid #101D42; }
+  .main-nav .navbar {
+    background: #ffd777 !important; }
+  .main-nav .container {
+    max-width: 98%; }
+  .main-nav .navbar-brand {
+    color: #101D42 !important;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 1000; }
+  .main-nav .navbar-toggler {
+    border: 0;
+    border-collapse: collapse; }
+    .main-nav .navbar-toggler .fa-bars {
+      font-size: 21px;
+      color: #101D42 !important; }
+  .main-nav .nav-item a {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 1000;
+    color: #101D42 !important; }
+
+.admin-dashboard .container {
+  min-width: 100% !important;
+  height: auto; }
+.admin-dashboard .aside {
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+  padding-top: 30px;
+  background: #101D42;
+  opacity: 0.8; }
+  .admin-dashboard .aside .admin-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .admin-dashboard .aside .admin-logo img {
+      width: 75px;
+      height: 75px; }
+    .admin-dashboard .aside .admin-logo p {
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff; }
+  .admin-dashboard .aside .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border: 0; }
+    .admin-dashboard .aside .nav .nav-item {
+      height: 50px;
+      padding: 10px;
+      list-style: none;
+      flex: 1; }
+      .admin-dashboard .aside .nav .nav-item a {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        color: #fff;
+        padding-left: 25px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 0;
+        border-radius: 0; }
+      .admin-dashboard .aside .nav .nav-item:hover {
+        background: #ffd777;
+        color: #101D42; }
+.admin-dashboard .main-content::-webkit-scrollbar {
+  width: 10px; }
+.admin-dashboard .main-content::-webkit-scrollbar-thumb {
+  background: #101D42;
+  border-radius: 10px; }
+.admin-dashboard .main-content {
+  height: 100vh;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+  background: lightgrey;
+  opacity: 0.9; }
+  .admin-dashboard .main-content .tab-content {
+    max-width: 98%;
+    margin: auto; }
+  .admin-dashboard .main-content .container {
+    padding: 10px 5px; }
+    .admin-dashboard .main-content .container .row {
+      width: 100%;
+      margin: auto;
+      background: #fff;
+      padding: 30px 20px;
+      box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.25); }
+      .admin-dashboard .main-content .container .row h4 {
+        width: 100%;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #101D42; }
+      .admin-dashboard .main-content .container .row .table {
+        padding-top: 20px; }
+        .admin-dashboard .main-content .container .row .table .btn {
+          min-width: 30px !important;
+          min-height: 25px !important; }
+          .admin-dashboard .main-content .container .row .table .btn a {
+            position: relative;
+            color: #fff; }
+          .admin-dashboard .main-content .container .row .table .btn .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+      .admin-dashboard .main-content .container .row .col-md-6 {
+        display: flex;
+        justify-content: center;
+        padding: 20px; }
+        .admin-dashboard .main-content .container .row .col-md-6 a {
+          color: #101D42 !important; }
+        .admin-dashboard .main-content .container .row .col-md-6 img {
+          width: 75px;
+          height: 75px;
+          margin-right: 20px; }
+      .admin-dashboard .main-content .container .row .form-group {
+        display: flex; }
+        .admin-dashboard .main-content .container .row .form-group textarea {
+          height: 300px; }
+      .admin-dashboard .main-content .container .row .submit-btn {
+        background: #101D42;
+        border: 0; }
+      .admin-dashboard .main-content .container .row .card-information .row {
+        max-width: 100% !important; }
+      .admin-dashboard .main-content .container .row .card-information .img-responsive {
+        max-width: 250px !important;
+        max-height: 250px !important; }
+        .admin-dashboard .main-content .container .row .card-information .img-responsive .card-img-top {
+          height: 250px !important; }
+      .admin-dashboard .main-content .container .row .card-information .card .card-title {
+        font-size: 14px !important; }
+
+@media only screen and (max-width: 980px) {
+  .admin-dashboard .aside {
+    min-width: 100%;
+    height: 500px; }
+    .admin-dashboard .aside .nav {
+      width: 50%;
+      margin: auto;
+      padding-left: 20px; }
+  .admin-dashboard .main-content {
+    min-width: 100%; } }
+.login-page {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh; }
+  .login-page .container {
+    max-width: 35% !important;
+    border: 1px solid #101D42;
+    border-radius: 5px;
+    padding: 0; }
+    .login-page .container h2 {
+      min-width: 100%;
+      background: #101D42;
+      color: #fff;
+      padding: 25px 20px; }
+    .login-page .container form {
+      padding: 20px; }
+      .login-page .container form .btn {
+        background: #101D42;
+        border: 0;
+        padding: 5px 20px; }
+
+@media only screen and (max-width: 800px) {
+  .login-page .container {
+    max-width: 80% !important; } }
+
+/*# sourceMappingURL=style.css.map */

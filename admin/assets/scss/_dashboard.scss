@@ -1,0 +1,207 @@
+.admin-dashboard {
+    .container{
+        min-width: 100% !important;
+        height: auto;
+    }
+
+    .aside {
+        height: 100vh;
+        display: block;
+        overflow: hidden;
+        padding-top: 30px;
+        background: $secondary_color;
+        opacity: 0.8;
+
+        .admin-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 75px;
+                height: 75px;
+            }
+
+            p{
+                padding-top: 10px;
+                font-size: 20px;
+                font-weight: 500;
+                color: $primary_color;
+            }
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            border: 0;
+
+            .nav-item {
+                height: 50px;
+                padding: 10px;
+                list-style: none;
+                flex: 1;
+                
+                a{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    color: $primary_color;
+                    padding-left: 25px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    border: 0;
+                    border-radius: 0;
+                }
+
+                &:hover {
+                    background: $navbar_color;
+                    color: $secondary_color;
+                }
+
+                
+            }
+        }
+    }
+
+     //Custom scroll bar
+     .main-content::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .main-content::-webkit-scrollbar-thumb {
+        background: $secondary_color;
+        border-radius: 10px;
+    }
+
+    .main-content {
+        height: 100vh;
+        overflow: scroll;
+        padding: 0;
+        margin: 0;
+        background: lightgrey;
+        opacity: 0.9;
+
+       
+
+        .tab-content {
+            max-width: 98%;
+            margin: auto;
+        }
+
+        .container {
+           padding: 10px 5px; 
+
+           .row {
+                width: 100%;
+                margin: auto;
+                background: $primary_color;
+                padding: 30px 20px;
+                box-shadow: -1px 2px 3px rgba(0,0,0,0.25);
+
+                h4 {
+                    width: 100%;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $secondary_color;
+                }
+
+                .table {
+                    padding-top: 20px;
+
+                    .btn {
+                        min-width: 30px !important;
+                        min-height: 25px !important;
+
+                        a{
+                            position: relative;
+                            color: $primary_color;
+                        }
+
+                        .fa {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+
+                .col-md-6 {
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+
+                    a{
+                        color: $secondary_color !important;
+                    }
+
+                    img {
+                        width: 75px;
+                        height: 75px;
+                        margin-right: 20px;
+                    }
+                }
+
+                .form-group {
+                    display: flex;
+
+                    textarea{
+                        height: 300px;
+                    }
+                }
+
+                .submit-btn {
+                    background: $secondary_color;
+                    border: 0;
+                }
+
+                .card-information {
+                    .row {
+                        max-width: 100% !important;
+                    }
+
+                    .img-responsive {
+                        max-width: 250px !important;
+                        max-height: 250px !important;
+
+                        .card-img-top {
+                            height: 250px !important;
+                        }
+                    }
+
+                    .card {
+                        .card-title {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+           }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 980px){
+    .admin-dashboard {
+        .aside{
+            min-width: 100%;
+            height: 500px;
+
+            .nav {
+                width: 50%;
+                margin: auto;
+                padding-left: 20px;
+                
+                // .nav-item {
+                //     padding-left: 20px;
+                // }
+            }
+        }
+        .main-content {
+            min-width: 100%;
+            // overflow: hidden;
+        }
+    }
+}
