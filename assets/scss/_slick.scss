@@ -1,0 +1,27 @@
+.top-rated-lawyers{
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .slick-prev{
+        &:before{
+            color: yellow !important
+        }
+    }
+
+    .slick-next{
+        &:before{
+            color: yellow !important
+        }
+    }
+
+    .top-lawyers {
+        width: 220px;
+        margin: auto;   
+    }
+}
