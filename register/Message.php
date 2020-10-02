@@ -37,7 +37,7 @@ class Message {
     public function deleteMessage($id){
         $query = "DELETE FROM message WHERE id=?";
         $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(1, $id);
+        $stmt->bindParam(1, $id);-
         $stmt->execute();
     }
 
